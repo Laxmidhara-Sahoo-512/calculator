@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <section id="calculator">
+       <div id="show">
+        <input type="text"  id="display">
+       </div>
+       <div class="buttons">
+         <input type="button" class="bt" value="AC" style="color: green;" onclick="cl()" >
+         <input type="button" class="bt" value="DEL" style="color: green;" onclick="fd()">
+         <input type="button" class="bt" value="%" style="color: green;" onclick="show('/100')">
+         <input type="button" class="bt" value="/" style="color: green;" onclick="show('/')">
+       </div>
+       <div class="buttons">
+        <input type="button" class="bt" value="7" style="color: white" onclick="show('7')">
+        <input type="button" class="bt" value="8" style="color: white" onclick="show('8')">
+        <input type="button" class="bt" value="9" style="color:white" onclick="show('9')">
+        <input type="button" class="bt" value="*" style="color: green" onclick="show('*')">
+      </div>
+      <div class="buttons">
+        <input type="button" class="bt" value="4" style="color: white" onclick="show('4')">
+        <input type="button" class="bt" value="5" style="color: white" onclick="show('5')">
+        <input type="button" class="bt" value="6" style="color:white" onclick="show('6')">
+        <input type="button" class="bt" value="-" style="color: green" onclick="show('-')">
+      </div>
+      <div class="buttons">
+        <input type="button" class="bt" value="1" style="color: white" onclick="show('1')">
+        <input type="button" class="bt" value="2" style="color: white" onclick="show('2')">
+        <input type="button" class="bt" value="3" style="color:white" onclick="show('3')">
+        <input type="button" class="bt" value="+" style="color: green" onclick="show('+')">
+      </div>
+      <div class="buttons">
+        <input type="button" class="bt" value="00" style="color: white" onclick="show('00')">
+        <input type="button" class="bt" value="0" style="color: white" onclick="show('0')">
+        <input type="button" class="bt" value="." style="color:white" onclick="show('.')">
+        <input type="button" class="bt" value="=" style="color: green" onclick="ans()">
+      </div>
+
+
+    </section>
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
